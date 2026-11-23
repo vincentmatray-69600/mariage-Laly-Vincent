@@ -9,10 +9,10 @@
 ## Hébergement et déploiement
 
 - **Hébergement** : GitHub Pages.
-- **Dépôt** : `vincentmatray-69600/site-mariage`, branche `main`, contenu servi depuis la racine.
+- **Dépôt** : `vincentmatray-69600/mariage-Laly-Vincent`, branche `main`, contenu servi depuis la racine.
 - `.nojekyll` présent : désactive le traitement Jekyll de GitHub Pages (site statique pur).
 - **Déploiement** : automatique à chaque `push` sur `main`, via l'action GitHub "pages build and deployment". Pas de CI personnalisée, pas d'étape de test automatisé.
-- **Domaine** : pas de nom de domaine personnalisé — le site reste sur `https://vincentmatray-69600.github.io/site-mariage/`.
+- **Domaine** : pas de nom de domaine personnalisé — le site reste sur `https://vincentmatray-69600.github.io/mariage-Laly-Vincent/`.
 
 ## Ce qui n'existe pas
 

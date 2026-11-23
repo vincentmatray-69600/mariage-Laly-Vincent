@@ -18,7 +18,7 @@ Chaque étape tient dans une session et se termine par quelque chose de vérifia
 12. **Ajouter mentions légales et politique de confidentialité** → vérifiable : les deux sections s'affichent en bas de page.
 13. **Remplacer l'illustration par la vraie photo du couple** en haut de page → vérifiable : la photo s'affiche avant les prénoms.
 14. **Ajouter le bouton "Ajouter à mon agenda"** → vérifiable : le clic ouvre Google Calendar pré-rempli.
-15. **Publier le code sur GitHub et activer GitHub Pages** → vérifiable : le site est accessible à `vincentmatray-69600.github.io/site-mariage/`.
+15. **Publier le code sur GitHub et activer GitHub Pages** → vérifiable : le site est accessible à `vincentmatray-69600.github.io/mariage-Laly-Vincent/`.
 16. **Optimiser le référencement** (titres, meta description, Open Graph, JSON-LD Event + FAQPage, sitemap.xml, robots.txt, vérification Google Search Console) → vérifiable : le test de données structurées et le rapport Search Console ne signalent plus d'erreur bloquante.
 17. **Optimiser la performance** (compression des images, chargement asynchrone des polices) → vérifiable : un test de vitesse (ex. PageSpeed) donne un score Performance ≥ 90.
 18. **Corriger les contrastes de couleur** pour l'accessibilité → vérifiable : un test de vitesse donne un score Accessibilité à 100.

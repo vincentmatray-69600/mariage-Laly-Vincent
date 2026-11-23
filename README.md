@@ -1,4 +1,4 @@
-# site-mariage
+# mariage-Laly-Vincent
 
 Le site du mariage de Laly &amp; Vincent — 1er mai 2027, Domaine du Prieuré Saint Pierre (Montjoyer).
 
@@ -10,7 +10,7 @@ Ouvrez simplement `index.html` dans un navigateur, ou servez le dossier avec n'i
 
 ## Hébergement (GitHub Pages)
 
-Dans les réglages du dépôt : **Settings → Pages**, source **Deploy from a branch**, branche `main`, dossier `/ (root)`. Le site sera ensuite disponible à une adresse du type `https://vincentmatray-69600.github.io/site-mariage/`.
+Dans les réglages du dépôt : **Settings → Pages**, source **Deploy from a branch**, branche `main`, dossier `/ (root)`. Le site sera ensuite disponible à une adresse du type `https://vincentmatray-69600.github.io/mariage-Laly-Vincent/`.
 
 ## À modifier vous-même après le mariage
 
