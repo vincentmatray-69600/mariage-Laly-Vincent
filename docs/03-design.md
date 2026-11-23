@@ -6,10 +6,18 @@
 
 | Couleur | Hex | Usage |
 |---|---|---|
-| Terracotta | `#C05C3A` | Pastille "dress code" uniquement |
-| Lavande | `#A9B2DE` | Pastille "dress code", fond du bouton itinéraire église |
-| Ivoire | `#F0E3C4` | Pastille "dress code", fond de la section Accueil |
-| Sauge | `#8B9A6C` | Pastille "dress code" uniquement |
+| Terracotta | `#C05C3A` | Chiffres du compte à rebours |
+| Lavande | `#A9B2DE` | Fond du bouton itinéraire église |
+| Ivoire | `#F0E3C4` | Fond de la section Accueil |
+| Sauge | `#8B9A6C` | Focus des champs, trait décoratif |
+
+### Palette dress code (pastel)
+
+| Couleur | Hex | Usage |
+|---|---|---|
+| Bleu pastel | `#9EC5DE` | Pastille "dress code" uniquement |
+| Vert pastel | `#A8CBA6` | Pastille "dress code" uniquement |
+| Jaune pastel | `#F2D77E` | Pastille "dress code" uniquement |
 
 ### Variantes accessibles (texte et fonds avec texte)
 
@@ -38,12 +46,12 @@ Versions assombries/éclaircies des couleurs de marque, introduites pour respect
 
 - **Fraunces** (serif) — titres, tous niveaux (h1, h2, h3), style display.
 - **Work Sans** (sans-serif) — texte courant, boutons, étiquettes.
-- Chargées depuis Google Fonts, en asynchrone (`preload` + bascule `media`) pour ne pas bloquer l'affichage.
+- Auto-hébergées (`assets/fonts/`), avec `preload` + `font-display: swap`, pour ne pas dépendre d'un service tiers.
 
 ## Logique responsive
 
 - Pas de media queries : les tailles de police et les espacements utilisent `clamp()` pour s'adapter en continu à la largeur d'écran.
-- Les grilles de cartes (programme, infos pratiques, gîtes) passent automatiquement à une colonne sur petit écran (`grid-template-columns: repeat(auto-fit, minmax(...))`).
+- Les grilles de cartes (programme, infos pratiques, logements) passent automatiquement à une colonne sur petit écran (`grid-template-columns: repeat(auto-fit, minmax(...))`).
 - La barre de navigation défile horizontalement si elle ne tient pas sur une ligne.
 
 ## Allure de chaque section
@@ -52,12 +60,12 @@ Versions assombries/éclaircies des couleurs de marque, introduites pour respect
 |---|---|---|
 | Accueil | Ivoire `#F0E3C4` | Centré, photo du couple en grand, gros titres Fraunces, compte à rebours dans des pastilles blanches |
 | Programme | Ivoire clair `#FBF6E8` | Deux cartes blanches côte à côte, titres terracotta |
-| Le lieu | Blanc `#FFFFFF` | Photo pleine largeur, cartes infos sur fond ivoire clair, cartes gîtes à bordure sauge fine |
+| Le lieu | Blanc `#FFFFFF` | Photo pleine largeur, cartes infos sur fond ivoire clair, cartes logements à bordure sauge fine |
 | Dress code | Sauge `#6A7552` | Fond coloré plein, texte et pastilles en ivoire clair |
 | RSVP | Lavande très clair `#EEF0FA` | Centré, un seul bouton d'action terracotta |
 | Cadeaux | Ivoire clair `#FBF6E8` | Centré, texte seul, section courte |
 | FAQ | Blanc `#FFFFFF` | Liste de cartes ivoire clair, une question par carte |
-| Photos | Terracotta `#B35636` | Fond coloré plein, formulaire blanc contrastant, texte ivoire clair |
+| Photos | Terracotta `#B35636` | Fond coloré plein, bouton blanc contrastant, texte ivoire clair |
 | Contact | Brun foncé `#3A2E22` | Fond sombre, boutons téléphone semi-transparents, texte ivoire |
 | Mentions légales | Brun très foncé `#2f251b` | Texte discret taupe clair, section courte |
 | Confidentialité | Brun très foncé `#241c14` | Texte discret taupe clair, section courte |

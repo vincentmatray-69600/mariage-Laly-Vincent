@@ -2,7 +2,7 @@
 
 Le site du mariage de Laly &amp; Vincent — 1er mai 2027, Domaine du Prieuré Saint Pierre (Montjoyer).
 
-Page statique unique (`index.html` + dossier `assets/`), sans dépendance externe (polices auto-hébergées). Programme, infos pratiques, RSVP, FAQ, et une galerie photo protégée par un code.
+Page statique unique (`index.html` + dossier `assets/`), sans dépendance externe (polices auto-hébergées). Programme, infos pratiques, RSVP, FAQ, et une galerie photo accessible via un lien Google Drive.
 
 ## Aperçu en local
 
@@ -14,14 +14,12 @@ Dans les réglages du dépôt : **Settings → Pages**, source **Deploy from a b
 
 ## À modifier vous-même après le mariage
 
-Dans `index.html`, tout en bas du fichier, deux variables sont prévues pour ça :
+Dans `index.html`, tout en bas du fichier, une variable est prévue pour ça :
 
 ```js
-var PHOTO_CODE = "...";
-var ALBUM_URL = "#"; // remplacez "#" par le lien de l'album (Google Photos, etc.)
+var DRIVE_URL = "#"; // remplacez "#" par le lien Google Drive de l'album
 ```
 
-- `PHOTO_CODE` : le code communiqué aux invités pour accéder à la galerie (valeur volontairement omise ici — ce fichier est public, la valeur réelle est uniquement dans `index.html`).
-- `ALBUM_URL` : le lien vers l'album en ligne (Google Photos partagé, galerie de la photographe...) une fois les photos disponibles.
+- `DRIVE_URL` : le lien vers l'album Google Drive une fois les photos disponibles. Tant qu'il vaut `"#"`, le site affiche un message d'attente à la place du bouton.
 
 Le lien RSVP (`href` de la section RSVP) et le lien vers l'album pour les FAQ/mentions légales peuvent être modifiés directement dans le HTML si besoin.

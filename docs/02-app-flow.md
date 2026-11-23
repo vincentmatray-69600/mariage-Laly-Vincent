@@ -16,20 +16,19 @@ Site à page unique. Les "pages" ci-dessous sont des sections ancrées de cette 
 
 ## `#programme` — Programme
 
-- Deux cartes : Samedi 1er mai (cérémonie, cocktail, dîner, soirée) et Dimanche 2 mai (brunch).
+- Deux cartes : Samedi 1er mai (rendez-vous église, cérémonie, retour au domaine & photos de groupe, vin d'honneur, dîner, dessert, soirée) et Dimanche 2 mai (brunch & piscine).
 - Pas d'élément cliquable dans cette section.
 
 ## `#lieu` — Le lieu & infos pratiques
 
-- Photo du domaine, infos parking/hébergement/transport, liste des gîtes à proximité.
+- Photo du domaine, infos parking/hébergement/transport, liste de logements à proximité (campings) + mention Airbnb.
 - Clic sur **"Itinéraire — Église de Valaurie"** → ouvre Google Maps, nouvel onglet (sortie du site).
 - Clic sur **"Itinéraire — Domaine de Montjoyer"** → ouvre Google Maps, nouvel onglet (sortie du site).
-- Clic sur un numéro de téléphone de gîte → ouvre l'application téléphone (`tel:`).
-- Clic sur un email de gîte (La Valdaine, Gîte La Source) → ouvre l'application mail (`mailto:`).
+- Clic sur un numéro de téléphone de camping → ouvre l'application téléphone (`tel:`).
 
 ## `#dresscode` — Dress code
 
-- Texte + 4 pastilles de couleur représentant la palette du mariage.
+- Texte + 3 pastilles de couleur (bleu, vert, jaune pastel).
 - Pas d'élément cliquable.
 
 ## `#rsvp` — RSVP
@@ -38,7 +37,7 @@ Site à page unique. Les "pages" ci-dessous sont des sections ancrées de cette 
 
 ## `#cagnotte` — Cadeaux
 
-- Texte uniquement (pas de liste de mariage, cagnotte sur place).
+- Texte uniquement (pas de liste de mariage, boîte sur place).
 - Pas d'élément cliquable.
 
 ## `#faq` — Questions fréquentes
@@ -48,11 +47,9 @@ Site à page unique. Les "pages" ci-dessous sont des sections ancrées de cette 
 
 ## `#photos` — Galerie photo
 
-- État par défaut : formulaire "Code d'accès" (champ texte + bouton "Voir les photos").
-- Soumission du formulaire :
-  - **Code incorrect** → affiche "Code incorrect, merci de réessayer." sous le champ, le formulaire reste affiché.
-  - **Code correct, album renseigné** → masque le formulaire, affiche "Merci !" et un bouton **"Voir l'album photos"** → ouvre l'album externe, nouvel onglet (sortie du site). *(État non encore actif — album en attente, cf. PRD.)*
-  - **Code correct, album non renseigné** → masque le formulaire, affiche "Merci ! L'album sera mis en ligne juste après le mariage." *(État actuel du site.)*
+- Pas de code d'accès : accès direct par lien.
+  - **Lien renseigné (`DRIVE_URL`)** → bouton **"Voir les photos"** visible → ouvre l'album Google Drive externe, nouvel onglet (sortie du site). *(État non encore actif — lien en attente, cf. PRD.)*
+  - **Lien non renseigné** → le bouton est masqué, affiche à la place "Merci ! L'album sera mis en ligne juste après le mariage." *(État actuel du site.)*
 
 ## `#contact` — Une question ?
 

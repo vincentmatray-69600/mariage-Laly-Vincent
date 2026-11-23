@@ -8,12 +8,12 @@ Chaque étape tient dans une session et se termine par quelque chose de vérifia
 2. **Ajouter le compte à rebours en direct** → vérifiable : les chiffres défilent en temps réel sur la page.
 3. **Ajouter le programme** (cartes Samedi / Dimanche) → vérifiable : les deux cartes et leurs horaires s'affichent.
 4. **Ajouter la section "Le lieu"** avec la vraie photo du domaine et les boutons d'itinéraire → vérifiable : la photo et les deux boutons Google Maps s'affichent.
-5. **Ajouter la liste des gîtes à proximité** → vérifiable : les 4 cartes de gîtes (adresse, téléphone, distance) s'affichent.
-6. **Ajouter le dress code** (texte + 4 pastilles de couleur) → vérifiable : les 4 pastilles s'affichent dans la bonne couleur.
+5. **Ajouter la liste de logements à proximité** → vérifiable : les cartes de campings (adresse, téléphone) et la mention Airbnb s'affichent.
+6. **Ajouter le dress code** (texte + pastilles de couleur) → vérifiable : les pastilles s'affichent dans la bonne couleur.
 7. **Ajouter le bouton RSVP** vers le Google Form → vérifiable : le clic ouvre le formulaire dans un nouvel onglet.
 8. **Ajouter la section Cadeaux** → vérifiable : le texte s'affiche.
 9. **Ajouter la FAQ** (6 questions) → vérifiable : les 6 questions/réponses s'affichent.
-10. **Construire la galerie photo protégée par code** (formulaire, vérification côté client, message de déverrouillage) → vérifiable : saisir le bon code affiche le message "Merci !".
+10. **Construire la galerie photo** (lien direct, pas de code d'accès, état "en attente" tant que le lien n'est pas renseigné) → vérifiable : le bouton "Voir les photos" ou le message d'attente s'affiche selon que le lien est renseigné.
 11. **Ajouter la section Contact** (téléphones cliquables) → vérifiable : le clic ouvre l'application téléphone sur mobile.
 12. **Ajouter mentions légales et politique de confidentialité** → vérifiable : les deux sections s'affichent en bas de page.
 13. **Remplacer l'illustration par la vraie photo du couple** en haut de page → vérifiable : la photo s'affiche avant les prénoms.
@@ -25,6 +25,6 @@ Chaque étape tient dans une session et se termine par quelque chose de vérifia
 
 ## À faire
 
-19. **Créer l'album Google Photos**, y déposer les photos du mariage, régler le partage sur "accès restreint aux personnes ayant le lien" → vérifiable : ouvrir le lien de l'album dans un navigateur et voir les photos.
-20. **Renseigner `ALBUM_URL` dans le code du site** avec le lien de l'album → vérifiable : sur le site, saisir le code d'accès affiche le bouton "Voir l'album photos", et le clic ouvre bien l'album.
-21. **Supprimer les données après le mariage** : réponses du Google Form RSVP et album Google Photos → vérifiable : le formulaire et l'album ne sont plus accessibles.
+19. **Créer l'album Google Drive**, y déposer les photos du mariage, régler le partage sur "accès restreint aux personnes ayant le lien" → vérifiable : ouvrir le lien de l'album dans un navigateur et voir les photos.
+20. **Renseigner `DRIVE_URL` dans le code du site** avec le lien de l'album → vérifiable : sur le site, le bouton "Voir les photos" s'affiche et le clic ouvre bien l'album.
+21. **Supprimer les données après le mariage** : réponses du Google Form RSVP et album Google Drive → vérifiable : le formulaire et l'album ne sont plus accessibles.

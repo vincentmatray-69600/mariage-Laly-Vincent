@@ -31,5 +31,5 @@ Services non intégrés au site (pas d'appel API, pas de clé, pas de SDK) : sim
 | Google Calendar | Bouton "Ajouter à mon agenda" | Lien `calendar.google.com/calendar/render?...` pré-rempli |
 | Google Maps | Boutons "Itinéraire" | Liens `google.com/maps/search/?...` |
 | Google Forms | Formulaire RSVP | Lien externe vers un formulaire existant, réponses non visibles depuis le site |
-| Google Photos | Album photo du mariage | Lien externe, ajouté après le mariage dans la variable `ALBUM_URL` du code — [EN ATTENTE, cf. PRD] |
+| Google Drive | Album photo du mariage | Lien externe, ajouté après le mariage dans la variable `DRIVE_URL` du code — [EN ATTENTE, cf. PRD] |
 | Google Search Console | Suivi du référencement (indexation, sitemap, données structurées) | Outil de supervision externe, aucune intégration dans le code du site hormis le fichier de vérification `googleb3fba4beb249fbe8.html` et `sitemap.xml` |
