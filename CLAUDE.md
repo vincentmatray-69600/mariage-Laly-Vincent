@@ -22,6 +22,6 @@ Si une demande porte sur une fonctionnalité qui n'est pas listée dans le PRD :
 ## Repères pratiques
 
 - `index.html` : tout le site (markup, styles, script).
-- `assets/` : images.
+- `assets/` : images (plusieurs tailles + variantes WebP pour le `srcset`) et `assets/fonts/` (polices auto-hébergées, Fraunces et Work Sans).
 - Code d'accès de la galerie photo et lien de l'album : variables `PHOTO_CODE` et `ALBUM_URL` tout en bas du `<script>` de `index.html`.
 - Aucune étape de build : toute modification de `index.html` est live dès le `push` sur `main` (déploiement automatique GitHub Pages).

@@ -4,7 +4,7 @@
 
 - HTML5 + CSS3 (styles en ligne + un bloc `<style>` global) + JavaScript vanilla (ES5/ES6).
 - Aucun framework, aucun bundler, aucun gestionnaire de paquets : pas de `package.json`, pas de `node_modules`, pas d'étape de build.
-- Un seul fichier `index.html` à la racine, plus un dossier `assets/` pour les images.
+- Un seul fichier `index.html` à la racine, plus un dossier `assets/` pour les images (avec variantes WebP + `srcset`) et `assets/fonts/` pour les polices auto-hébergées (Fraunces, Work Sans).
 
 ## Hébergement et déploiement
 
@@ -28,7 +28,6 @@ Services non intégrés au site (pas d'appel API, pas de clé, pas de SDK) : sim
 
 | Service | Rôle | Intégration |
 |---|---|---|
-| Google Fonts | Police Fraunces + Work Sans | `<link>` vers `fonts.googleapis.com` / `fonts.gstatic.com`, chargement asynchrone |
 | Google Calendar | Bouton "Ajouter à mon agenda" | Lien `calendar.google.com/calendar/render?...` pré-rempli |
 | Google Maps | Boutons "Itinéraire" | Liens `google.com/maps/search/?...` |
 | Google Forms | Formulaire RSVP | Lien externe vers un formulaire existant, réponses non visibles depuis le site |

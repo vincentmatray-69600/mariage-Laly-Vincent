@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<meta name="theme-color" content="#F0E3C4">
 <title>Mariage de Laly et Vincent — 1er mai 2027, Domaine du Prieuré Saint Pierre</title>
 <meta name="description" content="Le site du mariage de Laly et Vincent, le 1er mai 2027 au Domaine du Prieuré Saint Pierre à Montjoyer. Programme, infos pratiques, RSVP et galerie photo.">
 <meta name="robots" content="index, follow">
@@ -89,12 +91,11 @@
 }
 </script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet" media="print" onload="this.media='all'">
-<noscript><link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet"></noscript>
+<link rel="preload" href="assets/fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/work-sans.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+  @font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 400 700; font-display: swap; src: url('assets/fonts/fraunces.woff2') format('woff2'); }
+  @font-face { font-family: 'Work Sans'; font-style: normal; font-weight: 400 600; font-display: swap; src: url('assets/fonts/work-sans.woff2') format('woff2'); }
   body { margin: 0; background: #F0E3C4; font-family: 'Work Sans', sans-serif; color: #3A2E22; }
   * { box-sizing: border-box; }
   a { text-decoration: none; }
@@ -130,10 +131,15 @@
     </div>
   </div>
 
+  <main>
+
   <!-- HERO -->
   <section id="accueil" style="background: #F0E3C4; padding: clamp(48px, 9vw, 96px) 24px clamp(32px, 6vw, 56px);">
     <div style="max-width: 760px; margin: 0 auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 28px;">
-      <img src="assets/hero-couple.jpg" width="960" height="640" fetchpriority="high" alt="Laly et Vincent enlacés dans un champ de tournesols au coucher du soleil" style="width: min(480px, 85vw); height: auto; border-radius: 24px; display: block; box-shadow: 0 8px 28px rgba(58,46,34,0.14);">
+      <picture>
+        <source type="image/webp" srcset="assets/hero-couple-480.webp 480w, assets/hero-couple-960.webp 960w" sizes="min(480px, 85vw)">
+        <img src="assets/hero-couple.jpg" srcset="assets/hero-couple-480.jpg 480w, assets/hero-couple.jpg 960w" sizes="min(480px, 85vw)" width="960" height="640" fetchpriority="high" alt="Laly et Vincent enlacés dans un champ de tournesols au coucher du soleil" style="width: min(480px, 85vw); height: auto; border-radius: 24px; display: block; box-shadow: 0 8px 28px rgba(58,46,34,0.14);">
+      </picture>
       <div>
         <h1 style="margin: 0; font-family: 'Fraunces', serif; font-weight: 700; font-size: clamp(36px, 7vw, 64px); line-height: 1.05; color: #3A2E22;">Laly &amp; Vincent</h1>
         <div style="font-family: 'Fraunces', serif; font-style: italic; font-size: clamp(18px, 3vw, 24px); color: #9E4A2E; margin-top: 12px;">se marient le 1er mai 2027</div>
@@ -246,7 +252,10 @@
         <div style="font-size: 15px; color: #6b6255; margin-top: 8px;">Domaine du Prieuré Saint Pierre — Montjoyer</div>
       </div>
 
-      <img src="assets/prieure.jpg" width="1179" height="1457" loading="lazy" alt="Vue aérienne du Domaine du Prieuré Saint Pierre à Montjoyer, avec sa piscine et son bâti en pierre provençal" style="width: 100%; height: auto; border-radius: 20px; display: block; margin-top: 32px; box-shadow: 0 8px 28px rgba(58,46,34,0.14);">
+      <picture>
+        <source type="image/webp" srcset="assets/prieure-600.webp 600w, assets/prieure-900.webp 900w, assets/prieure-1179.webp 1179w" sizes="(max-width: 1000px) 100vw, 1000px">
+        <img src="assets/prieure.jpg" srcset="assets/prieure-600.jpg 600w, assets/prieure-900.jpg 900w, assets/prieure.jpg 1179w" sizes="(max-width: 1000px) 100vw, 1000px" width="1179" height="1457" loading="lazy" alt="Vue aérienne du Domaine du Prieuré Saint Pierre à Montjoyer, avec sa piscine et son bâti en pierre provençal" style="width: 100%; height: auto; border-radius: 20px; display: block; margin-top: 32px; box-shadow: 0 8px 28px rgba(58,46,34,0.14);">
+      </picture>
 
       <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-top: 28px;">
         <a href="https://www.google.com/maps/search/?api=1&amp;query=Eglise+Saint-Martin+2+rue+Lucian+Duc+26230+Valaurie" target="_blank" rel="noopener noreferrer" class="btn-primary" style="background: #A9B2DE; color: #3A2E22; padding: 12px 22px; border-radius: 999px; font-weight: 600; font-size: 14px; display: inline-block;">Itinéraire — Église de Valaurie</a>
@@ -407,7 +416,7 @@
           <input id="photo-code-input" type="text" placeholder="Entrez le code" style="padding: 12px 16px; border-radius: 999px; border: none; font-size: 15px; width: 220px; text-align: center;">
           <button type="submit" class="btn-primary" style="background: #FBF6E8; color: #B35636; border: none; padding: 12px 24px; border-radius: 999px; font-weight: 600; font-size: 14px; cursor: pointer;">Voir les photos</button>
         </div>
-        <div id="photo-error" style="display: none; color: #3A2E22; background: #FBF6E8; padding: 8px 16px; border-radius: 999px; font-size: 13px; margin-top: 4px;"></div>
+        <div id="photo-error" role="alert" style="display: none; color: #3A2E22; background: #FBF6E8; padding: 8px 16px; border-radius: 999px; font-size: 13px; margin-top: 4px;"></div>
       </form>
 
       <div id="photo-unlocked-album" style="display: none; margin-top: 32px; background: rgba(251,246,232,0.12); border: 1px solid rgba(251,246,232,0.4); border-radius: 20px; padding: 40px 24px;">
@@ -422,6 +431,10 @@
       </div>
     </div>
   </section>
+
+  </main>
+
+  <footer>
 
   <!-- CONTACT / FOOTER -->
   <section id="contact" style="background: #3A2E22; padding: clamp(48px, 9vw, 88px) 24px clamp(28px, 5vw, 40px);">
@@ -448,7 +461,11 @@
     <div style="max-width: 620px; margin: 0 auto;">
       <h2 style="margin: 0; font-family: 'Fraunces', serif; font-size: clamp(20px, 3vw, 26px); font-weight: 600; color: #F0E3C4;">Mentions légales</h2>
       <div style="font-size: 13px; color: #cabf9d; line-height: 1.7; margin-top: 16px;">
-        Ce site est un site personnel et non professionnel, créé par Laly et Vincent pour partager avec leurs proches les informations liées à leur mariage du 1er mai 2027. Il ne poursuit aucune activité commerciale et n'est pas destiné à un usage public : l'accès se fait uniquement via un lien transmis directement par les mariés.
+        Ce site est un site personnel et non professionnel, créé par Laly et Vincent pour partager avec leurs proches les informations liées à leur mariage du 1er mai 2027. Il ne poursuit aucune activité commerciale.
+        <br><br>
+        <strong>Hébergement :</strong> ce site est hébergé par GitHub Pages (GitHub Inc., infrastructure Fastly). Laly et Vincent n'opèrent aucun serveur ; l'hébergeur applique sa propre politique de confidentialité et de conservation des données techniques.
+        <br><br>
+        <strong>Référencement :</strong> ce site est volontairement indexé par les moteurs de recherche (Google notamment), afin que les invités puissent le retrouver en cherchant les prénoms des mariés. Son contenu est donc visible publiquement, pas uniquement par les personnes ayant reçu le lien.
         <br><br>
         Pour toute question concernant ce site, vous pouvez contacter Laly ou Vincent aux coordonnées indiquées ci-dessus.
       </div>
@@ -461,9 +478,13 @@
     <div style="max-width: 620px; margin: 0 auto;">
       <h2 style="margin: 0; font-family: 'Fraunces', serif; font-size: clamp(20px, 3vw, 26px); font-weight: 600; color: #F0E3C4;">Politique de confidentialité</h2>
       <div style="font-size: 13px; color: #cabf9d; line-height: 1.7; margin-top: 16px;">
-        Ce site ne collecte aucune donnée personnelle de façon autonome : il ne dépose pas de cookies et ne suit pas votre navigation.
+        Ce site ne collecte aucune donnée personnelle de façon autonome : il ne dépose pas de cookies et ne suit pas votre navigation. Les polices utilisées sont hébergées directement sur ce site ; aucune requête n'est envoyée à un service de polices tiers (Google Fonts ou autre).
+        <br><br>
+        <strong>Logs d'hébergement :</strong> comme tout site web, l'infrastructure qui héberge ce site (GitHub Pages) peut générer des journaux techniques standards (adresse IP, navigateur utilisé) lors de chaque visite. Ces journaux sont gérés par l'hébergeur, hors du contrôle de Laly et Vincent, selon sa propre politique.
         <br><br>
         La confirmation de présence (RSVP) se fait via un formulaire Google Forms externe ; les informations que vous y renseignez sont soumises à la politique de confidentialité de Google.
+        <br><br>
+        <strong>E-mails :</strong> les adresses e-mail affichées sur ce site (coordonnées des gîtes) ouvrent simplement votre propre messagerie ; aucun e-mail n'est collecté ni transmis par le site lui-même.
         <br><br>
         L'accès à la galerie photo se fait via un simple code communiqué aux invités : aucune information personnelle n'est demandée ni conservée à cette étape.
         <br><br>
@@ -473,11 +494,13 @@
     </div>
   </section>
 
+  </footer>
+
 </div>
 
 <script>
   // --- À modifier vous-même quand nécessaire ---
-  var PHOTO_CODE = "PRIEURE1MAI";
+  var PHOTO_CODE = "MONTJOYER1ERMAI2027";
   var ALBUM_URL = "#"; // remplacez "#" par le lien de l'album (Google Photos, etc.) après le mariage
   // ----------------------------------------------
 

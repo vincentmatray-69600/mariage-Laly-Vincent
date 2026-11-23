@@ -19,4 +19,4 @@ Le site est hébergé sur GitHub Pages, **public par défaut et maintenant index
 
 | Élément | Où il est stocké | Qui peut le lire | Qui peut l'écrire | Durée |
 |---|---|---|---|---|
-| Code d'accès à la galerie photo (actuellement `PRIEURE1MAI`) | En clair dans le JavaScript du site, visible par quiconque consulte le code source de la page | Toute personne qui inspecte le code source, pas seulement les invités | Vincent uniquement | Jusqu'au prochain changement dans le code |
+| Code d'accès à la galerie photo (valeur dans `index.html`, volontairement omise de ce document et du README) | En clair dans le JavaScript du site, visible par quiconque consulte le code source de la page | Toute personne qui inspecte le code source, pas seulement les invités | Vincent uniquement | Jusqu'au prochain changement dans le code |
