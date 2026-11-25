@@ -11,7 +11,7 @@ Site à page unique. Les "pages" ci-dessous sont des sections ancrées de cette 
 
 ## `#accueil` — Accueil
 
-- Photo du couple, prénoms, date, compte à rebours en direct (jours/heures/minutes/secondes).
+- Photo du couple, prénoms, date, compte à rebours en direct (jours/heures/minutes/secondes). Une fois le mariage commencé (1er mai 15h00), affiche "C'est le grand jour !" à la place ; à partir du 3 mai, affiche "Merci !".
 - Clic sur **"Ajouter au calendrier — Google"** → ouvre Google Calendar pré-rempli, dans un nouvel onglet (sortie du site).
 - Clic sur **"Ajouter au calendrier — Apple"** → télécharge/ouvre un fichier `.ics` (assets/mariage-laly-vincent.ics) avec les mêmes informations, pour Apple Calendar et tout autre client compatible.
 
@@ -62,3 +62,8 @@ Site à page unique. Les "pages" ci-dessous sont des sections ancrées de cette 
 
 - Texte uniquement.
 - Clic sur "↑ Retour en haut" → défilement vers `#accueil`.
+
+## Page d'erreur (`404.html`)
+
+- Affichée automatiquement par GitHub Pages pour toute adresse qui ne correspond à rien (faute de frappe, lien cassé).
+- Redirige immédiatement vers l'accueil (`/`), avec un lien de secours si la redirection automatique ne se déclenche pas.

@@ -13,7 +13,7 @@ Site web statique, en une seule page, qui centralise toutes les informations du 
 
 | Fonction | Ce qu'elle fait | État |
 |---|---|---|
-| Compte à rebours | Affiche en direct le temps restant avant le 1er mai 2027 15h00 | Terminé |
+| Compte à rebours | Affiche en direct le temps restant avant le 1er mai 2027 15h00 ; une fois le mariage commencé affiche "C'est le grand jour !", puis "Merci !" à partir du 3 mai | Terminé |
 | Ajout à l'agenda | Deux boutons : l'un ouvre Google Calendar pré-rempli, l'autre télécharge un fichier .ics (Apple Calendar et autres) avec les mêmes informations | Terminé |
 | Programme | Détaille les horaires du samedi (rendez-vous église, cérémonie, retour au domaine, vin d'honneur, dîner, dessert, soirée) et du dimanche (brunch & piscine) | Terminé |
 | Infos pratiques du lieu | Parking, hébergement sur place, transport, liste de logements à proximité (campings avec coordonnées, mention Airbnb), liens d'itinéraire Google Maps | Terminé |
@@ -25,6 +25,7 @@ Site web statique, en une seule page, qui centralise toutes les informations du 
 | Contact | Numéros de téléphone de Laly et Vincent, cliquables (`tel:`) | Terminé |
 | Mentions légales & confidentialité | Informe sur la nature privée du site et l'absence de collecte de données propre au site | Terminé |
 | Référencement (SEO) | Rend le site trouvable sur une recherche du type "mariage Laly et Vincent" : balises meta, données structurées (Event, FAQPage), sitemap, vérification Google Search Console | Terminé |
+| Page d'erreur 404 | Redirige automatiquement vers l'accueil en cas d'adresse invalide (faute de frappe dans l'URL) | Terminé |
 
 ## Hors périmètre
 

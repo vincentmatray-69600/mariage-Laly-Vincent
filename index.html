@@ -102,13 +102,14 @@
   * { box-sizing: border-box; }
   a { text-decoration: none; }
   html { scroll-behavior: smooth; }
+  section[id] { scroll-margin-top: 72px; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
   .nav-link { transition: opacity 0.15s ease; }
   .nav-link:hover { opacity: 0.6; }
   .cal-link { transition: text-decoration-color 0.15s ease; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; }
   .cal-link:hover { text-decoration-color: currentColor; }
   .btn-primary { transition: filter 0.15s ease, transform 0.15s ease; }
   .btn-primary:hover { filter: brightness(0.93); transform: translateY(-1px); }
-  input[type="text"]:focus { outline: 2px solid #8B9A6C; outline-offset: 2px; }
   ::selection { background: #A9B2DE; color: #3A2E22; }
 </style>
 </head>
@@ -148,7 +149,7 @@
         <div style="font-size: 15px; color: #6b6255; margin-top: 10px;">Domaine du Prieuré Saint Pierre — Montjoyer</div>
       </div>
 
-      <div style="display: flex; gap: clamp(10px, 3vw, 18px); justify-content: center; flex-wrap: wrap;">
+      <div id="countdown-grid" style="display: flex; gap: clamp(10px, 3vw, 18px); justify-content: center; flex-wrap: wrap;">
         <div style="background: #FFFFFF; border-radius: 16px; padding: 14px 18px; min-width: 76px; text-align: center; box-shadow: 0 4px 16px rgba(58,46,34,0.08);">
           <div id="cd-days" style="font-family: 'Fraunces', serif; font-size: clamp(26px, 5vw, 38px); font-weight: 600; color: #C05C3A;">–</div>
           <div style="font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #6A7552; margin-top: 2px;">jours</div>
@@ -165,6 +166,14 @@
           <div id="cd-seconds" style="font-family: 'Fraunces', serif; font-size: clamp(26px, 5vw, 38px); font-weight: 600; color: #C05C3A;">–</div>
           <div style="font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: #6A7552; margin-top: 2px;">secondes</div>
         </div>
+      </div>
+
+      <div id="countdown-today" style="display: none; background: #FFFFFF; border-radius: 16px; padding: 18px 32px; box-shadow: 0 4px 16px rgba(58,46,34,0.08);">
+        <div style="font-family: 'Fraunces', serif; font-size: clamp(24px, 5vw, 32px); font-weight: 600; color: #C05C3A;">C'est le grand jour !</div>
+      </div>
+
+      <div id="countdown-done" style="display: none; background: #FFFFFF; border-radius: 16px; padding: 18px 32px; box-shadow: 0 4px 16px rgba(58,46,34,0.08);">
+        <div style="font-family: 'Fraunces', serif; font-size: clamp(24px, 5vw, 32px); font-weight: 600; color: #C05C3A;">Merci !</div>
       </div>
 
       <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 24px;">
@@ -510,9 +519,32 @@
 
   function pad(n) { return (n < 10 ? '0' : '') + n; }
 
+  var countdownGrid = document.getElementById('countdown-grid');
+  var countdownToday = document.getElementById('countdown-today');
+  var countdownDone = document.getElementById('countdown-done');
+  var countdownTimer = null;
+
   function updateCountdown() {
-    var target = new Date('2027-05-01T15:00:00+02:00').getTime();
-    var diff = Math.max(0, target - Date.now());
+    var startDate = new Date('2027-05-01T15:00:00+02:00').getTime();
+    var endDate = new Date('2027-05-03T00:00:00+02:00').getTime();
+    var now = Date.now();
+
+    if (now >= endDate) {
+      countdownGrid.style.display = 'none';
+      countdownToday.style.display = 'none';
+      countdownDone.style.display = 'block';
+      if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
+      return;
+    }
+
+    if (now >= startDate) {
+      countdownGrid.style.display = 'none';
+      countdownToday.style.display = 'block';
+      countdownDone.style.display = 'none';
+      return;
+    }
+
+    var diff = startDate - now;
     var days = Math.floor(diff / 86400000); diff -= days * 86400000;
     var hours = Math.floor(diff / 3600000); diff -= hours * 3600000;
     var minutes = Math.floor(diff / 60000); diff -= minutes * 60000;
@@ -523,7 +555,7 @@
     document.getElementById('cd-seconds').textContent = pad(seconds);
   }
   updateCountdown();
-  setInterval(updateCountdown, 1000);
+  countdownTimer = setInterval(updateCountdown, 1000);
 
   var photosLinkWrap = document.getElementById('photos-link-wrap');
   var photosPending = document.getElementById('photos-pending');

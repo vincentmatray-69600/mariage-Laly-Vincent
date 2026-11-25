@@ -24,9 +24,13 @@ Chaque étape tient dans une session et se termine par quelque chose de vérifia
 18. **Corriger les contrastes de couleur** pour l'accessibilité → vérifiable : un test de vitesse donne un score Accessibilité à 100.
 19. **Ajouter le bouton "Ajouter au calendrier — Apple"** (fichier `.ics` téléchargeable, mêmes informations que l'événement Google Calendar) → vérifiable : le clic télécharge/ouvre le fichier `.ics` avec les bonnes dates, lieu et description.
 20. **Configurer le domaine personnalisé** `www.mariage-laly-vincent.fr` (fichier `CNAME`, DNS, mise à jour des URLs canonical/OG/sitemap/robots.txt) → vérifiable : le site est accessible à `https://www.mariage-laly-vincent.fr/`.
+21. **Ajouter les états "C'est le grand jour !" et "Merci !"** au compte à rebours une fois le mariage passé → vérifiable : en changeant la date système, les bons messages s'affichent à la place des chiffres.
+22. **Ajouter une page 404 personnalisée** → vérifiable : une adresse inexistante du site redirige vers l'accueil.
+23. **Recompresser les images WebP** du domaine et du couple, plus légères que leurs équivalents JPEG → vérifiable : chaque fichier `.webp` est plus léger que son fichier `.jpg` correspondant.
+24. **Petits correctifs d'accessibilité et de nettoyage** : `scroll-margin-top` sur les sections (titres non cachés par la barre de navigation fixe), défilement non fluide si `prefers-reduced-motion`, suppression d'une règle CSS `input:focus` obsolète → vérifiable : cliquer sur "Mentions légales" affiche bien le titre sous la barre de navigation.
 
 ## À faire
 
-21. **Créer l'album Google Drive**, y déposer les photos du mariage, régler le partage sur "accès restreint aux personnes ayant le lien" → vérifiable : ouvrir le lien de l'album dans un navigateur et voir les photos.
-22. **Renseigner `DRIVE_URL` dans le code du site** avec le lien de l'album → vérifiable : sur le site, le bouton "Voir les photos" s'affiche et le clic ouvre bien l'album.
-23. **Supprimer les données après le mariage** : réponses du Google Form RSVP et album Google Drive → vérifiable : le formulaire et l'album ne sont plus accessibles.
+25. **Créer l'album Google Drive**, y déposer les photos du mariage, régler le partage sur "accès restreint aux personnes ayant le lien" → vérifiable : ouvrir le lien de l'album dans un navigateur et voir les photos.
+26. **Renseigner `DRIVE_URL` dans le code du site** avec le lien de l'album → vérifiable : sur le site, le bouton "Voir les photos" s'affiche et le clic ouvre bien l'album.
+27. **Supprimer les données après le mariage** : réponses du Google Form RSVP et album Google Drive → vérifiable : le formulaire et l'album ne sont plus accessibles.
