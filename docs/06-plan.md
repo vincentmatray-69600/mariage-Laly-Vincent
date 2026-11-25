@@ -23,9 +23,10 @@ Chaque étape tient dans une session et se termine par quelque chose de vérifia
 17. **Optimiser la performance** (compression des images, chargement asynchrone des polices) → vérifiable : un test de vitesse (ex. PageSpeed) donne un score Performance ≥ 90.
 18. **Corriger les contrastes de couleur** pour l'accessibilité → vérifiable : un test de vitesse donne un score Accessibilité à 100.
 19. **Ajouter le bouton "Ajouter au calendrier — Apple"** (fichier `.ics` téléchargeable, mêmes informations que l'événement Google Calendar) → vérifiable : le clic télécharge/ouvre le fichier `.ics` avec les bonnes dates, lieu et description.
+20. **Configurer le domaine personnalisé** `www.mariage-laly-vincent.fr` (fichier `CNAME`, DNS, mise à jour des URLs canonical/OG/sitemap/robots.txt) → vérifiable : le site est accessible à `https://www.mariage-laly-vincent.fr/`.
 
 ## À faire
 
-20. **Créer l'album Google Drive**, y déposer les photos du mariage, régler le partage sur "accès restreint aux personnes ayant le lien" → vérifiable : ouvrir le lien de l'album dans un navigateur et voir les photos.
-21. **Renseigner `DRIVE_URL` dans le code du site** avec le lien de l'album → vérifiable : sur le site, le bouton "Voir les photos" s'affiche et le clic ouvre bien l'album.
-22. **Supprimer les données après le mariage** : réponses du Google Form RSVP et album Google Drive → vérifiable : le formulaire et l'album ne sont plus accessibles.
+21. **Créer l'album Google Drive**, y déposer les photos du mariage, régler le partage sur "accès restreint aux personnes ayant le lien" → vérifiable : ouvrir le lien de l'album dans un navigateur et voir les photos.
+22. **Renseigner `DRIVE_URL` dans le code du site** avec le lien de l'album → vérifiable : sur le site, le bouton "Voir les photos" s'affiche et le clic ouvre bien l'album.
+23. **Supprimer les données après le mariage** : réponses du Google Form RSVP et album Google Drive → vérifiable : le formulaire et l'album ne sont plus accessibles.

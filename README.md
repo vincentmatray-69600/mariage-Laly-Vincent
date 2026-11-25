@@ -10,7 +10,9 @@ Ouvrez simplement `index.html` dans un navigateur, ou servez le dossier avec n'i
 
 ## Hébergement (GitHub Pages)
 
-Dans les réglages du dépôt : **Settings → Pages**, source **Deploy from a branch**, branche `main`, dossier `/ (root)`. Le site sera ensuite disponible à une adresse du type `https://vincentmatray-69600.github.io/mariage-Laly-Vincent/`.
+Dans les réglages du dépôt : **Settings → Pages**, source **Deploy from a branch**, branche `main`, dossier `/ (root)`. Par défaut, le site est disponible à une adresse du type `https://vincentmatray-69600.github.io/mariage-Laly-Vincent/`.
+
+Un domaine personnalisé est configuré (fichier `CNAME` à la racine) : l'adresse officielle du site est désormais **`https://www.mariage-laly-vincent.fr/`**.
 
 ## À modifier vous-même après le mariage
 

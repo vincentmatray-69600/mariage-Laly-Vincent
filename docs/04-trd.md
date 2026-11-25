@@ -12,7 +12,7 @@
 - **Dépôt** : `vincentmatray-69600/mariage-Laly-Vincent`, branche `main`, contenu servi depuis la racine.
 - `.nojekyll` présent : désactive le traitement Jekyll de GitHub Pages (site statique pur).
 - **Déploiement** : automatique à chaque `push` sur `main`, via l'action GitHub "pages build and deployment". Pas de CI personnalisée, pas d'étape de test automatisé.
-- **Domaine** : pas de nom de domaine personnalisé — le site reste sur `https://vincentmatray-69600.github.io/mariage-Laly-Vincent/`.
+- **Domaine** : domaine personnalisé configuré via le fichier `CNAME` à la racine. Le site est servi sur `https://www.mariage-laly-vincent.fr/` (adresse par défaut `vincentmatray-69600.github.io/mariage-Laly-Vincent/` toujours active en parallèle, via les réglages GitHub Pages).
 
 ## Ce qui n'existe pas
 

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vincentmatray-69600.github.io/mariage-Laly-Vincent/sitemap.xml
+Sitemap: https://www.mariage-laly-vincent.fr/sitemap.xml
