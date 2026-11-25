@@ -22,9 +22,10 @@ Chaque étape tient dans une session et se termine par quelque chose de vérifia
 16. **Optimiser le référencement** (titres, meta description, Open Graph, JSON-LD Event + FAQPage, sitemap.xml, robots.txt, vérification Google Search Console) → vérifiable : le test de données structurées et le rapport Search Console ne signalent plus d'erreur bloquante.
 17. **Optimiser la performance** (compression des images, chargement asynchrone des polices) → vérifiable : un test de vitesse (ex. PageSpeed) donne un score Performance ≥ 90.
 18. **Corriger les contrastes de couleur** pour l'accessibilité → vérifiable : un test de vitesse donne un score Accessibilité à 100.
+19. **Ajouter le bouton "Ajouter au calendrier — Apple"** (fichier `.ics` téléchargeable, mêmes informations que l'événement Google Calendar) → vérifiable : le clic télécharge/ouvre le fichier `.ics` avec les bonnes dates, lieu et description.
 
 ## À faire
 
-19. **Créer l'album Google Drive**, y déposer les photos du mariage, régler le partage sur "accès restreint aux personnes ayant le lien" → vérifiable : ouvrir le lien de l'album dans un navigateur et voir les photos.
-20. **Renseigner `DRIVE_URL` dans le code du site** avec le lien de l'album → vérifiable : sur le site, le bouton "Voir les photos" s'affiche et le clic ouvre bien l'album.
-21. **Supprimer les données après le mariage** : réponses du Google Form RSVP et album Google Drive → vérifiable : le formulaire et l'album ne sont plus accessibles.
+20. **Créer l'album Google Drive**, y déposer les photos du mariage, régler le partage sur "accès restreint aux personnes ayant le lien" → vérifiable : ouvrir le lien de l'album dans un navigateur et voir les photos.
+21. **Renseigner `DRIVE_URL` dans le code du site** avec le lien de l'album → vérifiable : sur le site, le bouton "Voir les photos" s'affiche et le clic ouvre bien l'album.
+22. **Supprimer les données après le mariage** : réponses du Google Form RSVP et album Google Drive → vérifiable : le formulaire et l'album ne sont plus accessibles.

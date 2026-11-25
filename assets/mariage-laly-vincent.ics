@@ -1,0 +1,17 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Laly et Vincent//Mariage 1er mai 2027//FR
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:mariage-laly-vincent-2027-05-01@mariage-laly-vincent.fr
+DTSTAMP:20261125T000000Z
+DTSTART:20270501T123000Z
+DTEND:20270502T000000Z
+SUMMARY:Mariage de Laly & Vincent
+LOCATION:Église Saint-Martin\, 2 rue Lucian Duc\, 26230 Valaurie
+DESCRIPTION:Rendez-vous à 14h30\, cérémonie à 15h à l'église Saint-Ma
+ rtin de Valaurie\, puis réception au Domaine du Prieuré Saint Pierre à M
+ ontjoyer.
+END:VEVENT
+END:VCALENDAR

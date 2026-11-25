@@ -14,7 +14,7 @@ Site web statique, en une seule page, qui centralise toutes les informations du 
 | Fonction | Ce qu'elle fait | État |
 |---|---|---|
 | Compte à rebours | Affiche en direct le temps restant avant le 1er mai 2027 15h00 | Terminé |
-| Ajout à l'agenda | Bouton qui ouvre Google Calendar pré-rempli avec l'événement | Terminé |
+| Ajout à l'agenda | Deux boutons : l'un ouvre Google Calendar pré-rempli, l'autre télécharge un fichier .ics (Apple Calendar et autres) avec les mêmes informations | Terminé |
 | Programme | Détaille les horaires du samedi (rendez-vous église, cérémonie, retour au domaine, vin d'honneur, dîner, dessert, soirée) et du dimanche (brunch & piscine) | Terminé |
 | Infos pratiques du lieu | Parking, hébergement sur place, transport, liste de logements à proximité (campings avec coordonnées, mention Airbnb), liens d'itinéraire Google Maps | Terminé |
 | Dress code | Présente une palette de couleurs pastel (bleu, vert, jaune) ; précise d'éviter le blanc et le noir | Terminé |

@@ -28,7 +28,8 @@ Services non intégrés au site (pas d'appel API, pas de clé, pas de SDK) : sim
 
 | Service | Rôle | Intégration |
 |---|---|---|
-| Google Calendar | Bouton "Ajouter à mon agenda" | Lien `calendar.google.com/calendar/render?...` pré-rempli |
+| Google Calendar | Bouton "Ajouter au calendrier — Google" | Lien `calendar.google.com/calendar/render?...` pré-rempli |
+| — (aucun service, fichier statique) | Bouton "Ajouter au calendrier — Apple" | Fichier `assets/mariage-laly-vincent.ics` servi directement par le site, mêmes informations que l'événement Google Calendar |
 | Google Maps | Boutons "Itinéraire" | Liens `google.com/maps/search/?...` |
 | Google Forms | Formulaire RSVP | Lien externe vers un formulaire existant, réponses non visibles depuis le site |
 | Google Drive | Album photo du mariage | Lien externe, ajouté après le mariage dans la variable `DRIVE_URL` du code — [EN ATTENTE, cf. PRD] |

@@ -12,7 +12,8 @@ Site à page unique. Les "pages" ci-dessous sont des sections ancrées de cette 
 ## `#accueil` — Accueil
 
 - Photo du couple, prénoms, date, compte à rebours en direct (jours/heures/minutes/secondes).
-- Clic sur **"Ajouter à mon agenda"** → ouvre Google Calendar pré-rempli, dans un nouvel onglet (sortie du site).
+- Clic sur **"Ajouter au calendrier — Google"** → ouvre Google Calendar pré-rempli, dans un nouvel onglet (sortie du site).
+- Clic sur **"Ajouter au calendrier — Apple"** → télécharge/ouvre un fichier `.ics` (assets/mariage-laly-vincent.ics) avec les mêmes informations, pour Apple Calendar et tout autre client compatible.
 
 ## `#programme` — Programme
 
